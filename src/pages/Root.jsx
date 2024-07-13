@@ -10,11 +10,31 @@ const links = [
   },
   {
     title: "SellerSpot Dashboard",
-    href: "/dashboard",
+    href: "/user/dashboard",
   },
   {
-    title: "Admin Page",
-    href: "/admin",
+    title: "Buyer Dashboard",
+    href: "/buyer/dashboard",
+  },
+  {
+    title: "Home Page",
+    href: "/home",
+  },
+  {
+    title: "Products Page",
+    href: "/product",
+  },
+  {
+    title: "Product Details Page",
+    href: "/productdetails",
+  },
+  {
+    title: "Post Page",
+    href: "/post",
+  },
+  {
+    title: "Order Page",
+    href: "/order",
   },
   {
     title: "Auth Page",
@@ -47,7 +67,7 @@ const Root = () => {
 
   return (
     <div className="container py-24 px-12">
-      <h1 className="mb-3 text-4xl font-bold text-primary">
+      <h1 className="mb-3 text-4xl font-extrabold text-primary">
         Welcome to <span className="text-white">SellerSpot</span> Links Page
       </h1>
 

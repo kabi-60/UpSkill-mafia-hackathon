@@ -10,7 +10,7 @@ const NavBar = () => {
             <a className="flex space-x-5 " href="/">
               <span className="sr-only">Home</span>
               <img src={logo} alt="" className="h-10" />
-              <h1 className="font-mono font-bold mt-2 text-xl">SELLER SPOT</h1>
+              <h1 className="font-mono font-bold mt-2 text-md md:text-xl">SELLER SPOT</h1>
             </a>
           </div>
 
@@ -73,10 +73,10 @@ const NavBar = () => {
               </div>
 
               <div className="block md:hidden">
-                <button className="rounded bg-gray-100 p-2 text-grey transition hover:text-gray-600/75">
+                <button className="rounded bg-gray-100 p-2 mr-2 text-grey transition hover:text-gray-600/75">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
+                    className="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

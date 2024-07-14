@@ -26,10 +26,10 @@ const Home = () => {
     <div className="bg-space">
       <div className="container mx-auto relative">
         <NavBar />
-        <div className="flex my-8 h-[675px] ">
-          <div className="w-[40%] relative">
-            <div className="w-96 mx-auto my-24 z-10 text-center relative">
-              <h1 className="text-8xl font-extrabold relative">
+        <div className="lg:flex xl:my-8  xl:h-[675px] ">
+          <div className="xl:w-[40%] relative">
+            <div className="w-96 mx-auto my-10 xl:my-24 z-10 text-center relative">
+              <h1 className="text-7xl xl:text-8xl font-extrabold relative">
                 Let's Explore{" "}
                 <span className="text-space font-semibold">unique</span>{" "}
                 products.
@@ -48,44 +48,44 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            <div className="absolute top-1 left-0 w-full h-full z-5 flex justify-center items-center">
+            <div className="absolute -top-5 xl:top-1 left-0 w-full h-full z-5 flex justify-center items-center">
               <h1
-                className="py-12 bg-grey hover:bg-teal w-96"
+                className="xl:py-12 py-9 bg-grey hover:bg-teal w-72 xl:w-96"
                 style={{ transform: "rotate(-5deg)" }}
               ></h1>
             </div>
           </div>
-          <div className="w-[60%] mx-auto">
+          <div className="hidden lg:block w-[60%] mx-auto">
             <img src={home} alt="Home" className="mx-auto rounded" />
           </div>
         </div>
-        <div className="bg-grey relative w-full z-50 py-11">
-          <ul className="flex list-none space-x-40 mx-auto text-white justify-center z-50">
+        <div className="w-full bg-grey relative xl:w-full z-50 py-11">
+          <ul className="flex list-none  space-x-5 lg:space-x-32 xl:space-x-40 lg:mx-auto text-white justify-center z-50">
             <li className="z-50">
-              <img src={Linear} alt="" />
-              <p className="text-center upper font-bold font-mono pt-2">
+              <img src={Linear} alt=""  className="h-10  xl:h-auto"/>
+              <p className="text-center upper  text-xs  font-bold font-mono pt-2">
                 Linear
               </p>
             </li>
             <li className="z-50">
-              <img src={Notion} alt="" />
-              <p className="text-center upper font-bold font-mono pt-2">
+              <img src={Notion} alt=""  className="h-10  xl:h-auto"/>
+              <p className="text-center upper  text-xs  font-bold font-mono pt-2">
                 Notion
               </p>
             </li>
             <li className="z-50">
-              <img src={Loom} alt="" />
-              <p className="text-center upper font-bold font-mono pt-2">Loom</p>
+              <img src={Loom} alt=""  className="h-10  xl:h-auto"/>
+              <p className="text-center upper text-xs  r font-bold font-mono pt-2">Loom</p>
             </li>
             <li className="z-50">
-              <img src={Spline} alt="" />
-              <p className="text-center upper font-bold font-mono pt-2">
+              <img src={Spline} alt=""  className="h-10  xl:h-auto"/>
+              <p className="text-center upper  text-xs  font-bold font-mono pt-2">
                 Spline
               </p>
             </li>
             <li className="z-50">
-              <img src={Raycast} alt="" />
-              <p className="text-center upper font-bold font-mono pt-2">
+              <img src={Raycast} alt=""  className="h-10  xl:h-auto"/>
+              <p className="text-center upper f text-xs  ont-bold font-mono pt-2">
                 Raycast
               </p>
             </li>
@@ -101,9 +101,9 @@ const Home = () => {
         </div>
         <button
           onClick={post}
-          className="fixed bottom-10 right-52 z-50 bg-teal h-20 w-20 rounded-full text-center"
+          className="fixed bottom-28 right-10 lg:right-52 z-50 bg-teal h-14 lg:h-20 w-14 lg:w-20 rounded-full text-center"
         >
-          <img src={plane} alt="" className="h-16 mt-3 px-2 py-2 mx-auto" />
+          <img src={plane} alt="" className="h-13 lg:h-16 mt-1 lg:mt-3 px-2 py-2 mx-auto" />
         </button>
         <Service />
         <Footer />

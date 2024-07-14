@@ -16,7 +16,7 @@ import OrderConfirmation from "./pages/OrderConfirmation.jsx";
 import UpdateOrder from "./pages/UpdateOrder.jsx";
 import Team from "./pages/Team.jsx";
 import About from "./pages/About.jsx";
-
+import MapPage from "./pages/Map.jsx";
 
 const router = createBrowserRouter([
   {
@@ -74,6 +74,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/map",
+    element: <MapPage />,
   },
 ]);
 

@@ -16,7 +16,7 @@ if (isDev) {
 app.use(express.json());
 
 const server = http.createServer(app);
-
+console.log(MONGO_URI)
 mongoose
   .connect(MONGO_URI)
   .then(() => console.log("Database connected Successfully"))

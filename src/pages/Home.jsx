@@ -12,6 +12,8 @@ import Loom from "../assets/images/Logo/Loom.png";
 import Notion from "../assets/images/Logo/Notion.png";
 import Raycast from "../assets/images/Logo/Raycast.png";
 import Spline from "../assets/images/Logo/Spline.png";
+import About from "./MiniAbout.jsx";
+import Team from "./MiniTeam.jsx";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -105,7 +107,10 @@ const Home = () => {
         >
           <img src={plane} alt="" className="h-13 lg:h-16 mt-1 lg:mt-3 px-2 py-2 mx-auto" />
         </button>
+        
         <Service />
+        <About/>
+        <Team/>
         <Footer />
       </div>
     </div>

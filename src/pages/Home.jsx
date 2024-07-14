@@ -60,21 +60,34 @@ const Home = () => {
           </div>
         </div>
         <div className="bg-grey relative w-full z-50 py-11">
-          <ul className="flex list-none space-x-10 mx-auto text-white justify-center z-50">
+          <ul className="flex list-none space-x-40 mx-auto text-white justify-center z-50">
             <li className="z-50">
               <img src={Linear} alt="" />
+              <p className="text-center upper font-bold font-mono pt-2">
+                Linear
+              </p>
             </li>
             <li className="z-50">
               <img src={Notion} alt="" />
+              <p className="text-center upper font-bold font-mono pt-2">
+                Notion
+              </p>
             </li>
             <li className="z-50">
               <img src={Loom} alt="" />
+              <p className="text-center upper font-bold font-mono pt-2">Loom</p>
             </li>
             <li className="z-50">
               <img src={Spline} alt="" />
+              <p className="text-center upper font-bold font-mono pt-2">
+                Spline
+              </p>
             </li>
             <li className="z-50">
               <img src={Raycast} alt="" />
+              <p className="text-center upper font-bold font-mono pt-2">
+                Raycast
+              </p>
             </li>
           </ul>
           <div

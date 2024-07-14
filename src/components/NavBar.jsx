@@ -20,15 +20,6 @@ const NavBar = () => {
                 <li>
                   <a
                     className="text-grey font-bold text-md transition uppercase hover:text-teal"
-                    href="#"
-                  >
-                    catalouge
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-grey font-bold text-md transition uppercase hover:text-teal"
                     href="/product"
                   >
                     Products
@@ -41,6 +32,22 @@ const NavBar = () => {
                     href="/order"
                   >
                     Orders
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-grey font-bold text-md transition uppercase hover:text-teal"
+                    href="/product"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-grey font-bold text-md transition uppercase hover:text-teal"
+                    href="/product"
+                  >
+                    Contact us
                   </a>
                 </li>
 
@@ -58,7 +65,7 @@ const NavBar = () => {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <a
-                  className="rounded-md bg-teal hover:bg-transparent hover:border hover:text-grey px-5 py-2.5 text-md font-semibold text-white shadow "
+                  className="rounded-md bg-grey hover:text-space hover:bg-teal hover:bg-transparent hover:border hover:text-grey px-5 py-2.5 text-md font-semibold text-white shadow "
                   href="/auth/signup"
                 >
                   Signup

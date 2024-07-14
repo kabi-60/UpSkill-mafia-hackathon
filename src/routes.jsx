@@ -10,12 +10,14 @@ import ProductsPage from "./pages/ProductsPage.jsx";
 import Post from "./pages/Post.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
 import OrderPage from "./pages/OrderPage.jsx";
+import OrderConfirmation from "./pages/OrderConfirmation.jsx";
+import UpdateOrder from "./pages/UpdateOrder.jsx";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-  },
+  // {
+  //   path: "/",
+  //   element: <Root />,
+  // },
   {
     path: "/auth/login",
     element: <Login />,
@@ -33,7 +35,7 @@ const router = createBrowserRouter([
     element: <BuyerDashboard />,
   },
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
   {
     path: "/productdetails",
     element: <ProductDetails />,
+  },
+  {
+    path: "/orderconfirmation",
+    element: <OrderConfirmation />,
+  },
+  {
+    path: "/updateorder",
+    element: <UpdateOrder />,
   },
 ]);
 

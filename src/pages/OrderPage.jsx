@@ -1,10 +1,12 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+
+
 import { Link } from "react-router-dom";
 
 const OrderPage = () => {
   return (
-    <div class="bg-space h-[100vh]">
+    <div class="bg-space h-[100vh] ">
       <div class="container mx-auto ">
         <NavBar />
 
@@ -127,7 +129,7 @@ const OrderPage = () => {
                 </td>
                 <td className="">
                   <div className="flex items-center justify-center ml-5">
-                    <Link to={"/updatepassword/1"} className="mr-2">
+                    <Link to={"/updateorder"} className="mr-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={20}
@@ -168,11 +170,12 @@ const OrderPage = () => {
                   </div>
                 </td>
               </tr>
-              {/* Add more static rows as needed */}
+         
             </tbody>
           </table>
         </div>
       </div>
+    
     </div>
   );
 };

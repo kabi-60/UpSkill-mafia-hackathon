@@ -37,8 +37,11 @@ const Signup = () => {
                   SellerSpot
                 </h1>
               </div>
+              <div className="z-0"> 
+
               <SignUp />
-              <div className="absolute bottom-[132px] text-teal bg-[#e6e6e6] text-md  px-3 font-bold right-[255px]">
+              </div>
+              <div className="absolute bottom-[94px] text-teal bg-[#e6e6e6] text-md z-10  px-3 font-bold right-[258px]">
                 <Link to="/auth/login">Sign in</Link>
               </div>
             </div>

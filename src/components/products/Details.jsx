@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Details = () => {
   const navigate = useNavigate();
   const order = () => {
-    navigate("/userdashboard");
+    navigate("/orderconfirmation");
   };
 
   return (
@@ -42,7 +42,7 @@ const Details = () => {
 
               <div className="flex items-center space-x-4 my-4">
                 <div>
-                  <div className="border border-black flex py-2 px-3">
+                  <div className="flex py-2 px-3">
                     <span className="text-grey mr-1 mt-1">$</span>
                     <span className="font-bold text-grey text-3xl">25</span>
                   </div>
@@ -72,7 +72,7 @@ const Details = () => {
               <div className="flex py-4 space-x-4">
                 <button
                   onClick={order}
-                  className="h-12 px-6 py-1 font-semibold rounded bg-teal hover:bg- text-white"
+                  className="h-12 px-6 py-1 font-semibold rounded bg-grey hover:bg-teal  hover:bg- text-white"
                 >
                   Buy Now
                 </button>

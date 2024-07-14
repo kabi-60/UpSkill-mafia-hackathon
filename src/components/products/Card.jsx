@@ -93,7 +93,7 @@ const Card = () => {
                 <div className="flex space-x-5 text-sm font-medium justify-center">
                   <button
                     onClick={viewpage}
-                    className="transition ease-in duration-300 inline-flex items-center text-sm font-bold mb-2 md:mb-0 bg-[#00ADB5]  px-5 py-2 hover:shadow-lg tracking-wider text-white rounded-full hover:bg-[#00ADB5]"
+                    className="transition ease-in duration-300 inline-flex items-center text-sm font-bold mb-2 md:mb-0 bg-grey hover:bg-teal  px-5 py-2 hover:shadow-lg tracking-wider text-white rounded-full hover:bg-[#00ADB5]"
                   >
                     <span>View Details</span>
                   </button>

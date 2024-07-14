@@ -1,10 +1,7 @@
 import React from "react";
 
 import round from "../assets/images/round.png";
-import skeleton from "../assets/images/skeletons/1.png";
-import skeleton_1 from "../assets/images/skeletons/2.png";
-import cloud from "../assets/images/form.png";
-
+import skeleton from "../assets/images/skeletons/coin.png";
 import NavBar from "../components/NavBar";
 import { toast } from "sonner";
 
@@ -24,12 +21,6 @@ const UserDashboard = () => {
             <img src={round} alt="" className="h-44" />
           </div>
           <div className="flex justify-center relative">
-            <div className="absolute top-10 z-50 -left-10">
-              <img src={skeleton_1} alt="" className="h-52" />
-            </div>
-            <div className="absolute -top-5 z-50 left-[120px]">
-              <img src={cloud} alt="" className="h-28" />
-            </div>
             <div className=" h-[750px] w-[1550px] flex justify-center items-center rounded">
               <div className="flex h-[630px] w-[1400px] relative z-40 flex-col items-center justify-center p-6 text-slate-400/0 xl:text-slate-400">
                 <div className="grid h-full w-full grid-cols-10 gap-4">
@@ -55,17 +46,13 @@ const UserDashboard = () => {
                   </div>
                   <div className="col-span-4 row-span-2 bg-grey rounded py-2.5 card flex justify-center items-center">
                     <div className="text-white">
-                      <h1 className="text-md font-semibold moda">
-                        PayMent Method
-                      </h1>
-                      <select className="rounded text-center border focus:outline-grey bg-transparent w-96 py-2">
-                        <option className="bg-grey">
-                          Choose the Payment method
-                        </option>
-                        <option className="bg-grey">Cash On Delivery</option>
-                        <option className="bg-grey">Google Pay</option>
-                        <option className="bg-grey">Phonepay</option>
-                      </select>
+                      <h1 className="text-md font-semibold moda">Bio-Data</h1>
+                      <textarea
+                        rows={7}
+                        type="text"
+                        id="address"
+                        class=" rounded border py-2 w-96 focus:outline-grey px-3 text-white bg-transparent"
+                      />
                     </div>
                   </div>
                   <div className="col-span-4 row-span-4 bg-grey rounded card flex justify-center items-center">
@@ -150,32 +137,66 @@ const UserDashboard = () => {
                     </div>
                   </div>
 
-                  <button
-                    className="col-span-6 row-span-1 bg-teal rounded flex justify-center items-center cursor-pointer"
-                    onClick={() => toast("Order Successfully")}
-                  >
+                  <div className="col-span-3 row-span-1 card rounded flex justify-center items-center cursor-pointer">
                     <div className="text-white w-full mx-10">
-                      <h1 className="text-xl font-bold moda text-center">
-                        Submit
-                      </h1>
-                    </div>
-                  </button>
-                  <div className="col-span-4 row-span-1 bg-grey rounded card flex justify-center py-3 items-center">
-                    <div className="text-white w-full mx-10">
-                      <h1 className="text-md font-semibold moda text-start">
-                        Quantity
-                      </h1>
-                      <div className="w-full flex justify-center">
-                        <select className="rounded text-center border focus:outline-grey bg-transparent w-full py-2">
-                          {[1, 2, 3, 4, 5].map((option) => (
-                            <option key={option} className="bg-grey">
-                              {option}
-                            </option>
-                          ))}
-                        </select>
+                     
+                      <div className="flex justify-center">
+                        <div className=" text-2xl  flex space-x-4">
+                          <h1 className="text-2xl font-extrabold moda text-center ">
+                            Post
+                          </h1>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-shopping-cart mt-1"
+                          >
+                            <circle cx="8" cy="21" r="1" />
+                            <circle cx="19" cy="21" r="1" />
+                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                          </svg>
+                          500+
+                        </div>
+                    
                       </div>
                     </div>
                   </div>
+                  <div className="col-span-3 row-span-1 card rounded flex justify-center items-center cursor-pointer">
+                    <div className="text-white w-full mx-10">
+                     
+                      <div className="flex justify-center">
+                   
+                        <div className="text-2xl  flex space-x-4 ">
+                          <h1 className="text-2xl font-extrabold ">
+                            Sales
+                          </h1>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-badge-check mt-1 "
+                          >
+                            <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                            <path d="m9 12 2 2 4-4" />
+                          </svg>
+                          500+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
                 </div>
               </div>
             </div>

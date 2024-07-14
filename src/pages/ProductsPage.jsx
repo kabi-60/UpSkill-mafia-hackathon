@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import Card from "../components/products/Card";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 // Sample data for products
 const products = Array.from({ length: 12 }, (_, i) => ({ id: i + 1 }));
@@ -27,8 +28,8 @@ const ProductsPage = () => {
   const totalPages = Math.ceil(products.length / productsPerPage);
 
   return (
-    <div className="h-[150vh] bg-space">
-      <div className="container mx-auto ">
+    <div className="bg-space">
+      <div className="container  mx-auto ">
         <NavBar />
         <div className=" text-center font-serif">
           <h1 className="text-5xl uppercase text-grey font-extrabold">
@@ -40,7 +41,7 @@ const ProductsPage = () => {
             <Card key={product.id} product={product} />
           ))}
         </div>
-        <div className="flex justify-center mt-4">
+        <div className="flex  py-5 justify-center ">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i}
@@ -56,6 +57,7 @@ const ProductsPage = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

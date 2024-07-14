@@ -37,17 +37,16 @@ const NavBar = () => {
                 <li>
                   <a
                     className="text-grey font-bold text-md transition uppercase hover:text-teal"
-                    href="/product"
+                    href="/team"
                   >
-                    About Us
-                  </a>
+                    Team                  </a>
                 </li>
                 <li>
                   <a
                     className="text-grey font-bold text-md transition uppercase hover:text-teal"
-                    href="/product"
+                    href="/about"
                   >
-                    Contact us
+                    About Us
                   </a>
                 </li>
 

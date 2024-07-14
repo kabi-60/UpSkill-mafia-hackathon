@@ -14,6 +14,9 @@ import ProductDetails from "./pages/ProductDetails.jsx";
 import OrderPage from "./pages/OrderPage.jsx";
 import OrderConfirmation from "./pages/OrderConfirmation.jsx";
 import UpdateOrder from "./pages/UpdateOrder.jsx";
+import Team from "./pages/Team.jsx";
+import About from "./pages/About.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -63,6 +66,14 @@ const router = createBrowserRouter([
   {
     path: "/updateorder",
     element: <UpdateOrder />,
+  },
+  {
+    path: "/team",
+    element: <Team />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 

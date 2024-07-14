@@ -10,7 +10,10 @@ const OrderPage = () => {
         <NavBar />
 
         <div className="mt-7 h-[55vh] overflow-auto">
-          <table className="w-full whitespace-nowrap">
+          <div  className="hidden lg:block">
+
+          
+          <table className=" w-full whitespace-nowrap">
             <thead className="text-center ">
               <tr className=" ">
                 <th></th>
@@ -171,6 +174,82 @@ const OrderPage = () => {
               </tr>
             </tbody>
           </table>
+          </div>
+          <div>
+          <div className="md:hidden px-5 ">
+              <div className="flex flex-col border-teal border-b py-2">
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-semibold">Name:</span>
+                  <span className="text-sm text-grey">Priyanshu</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-semibold">Email:</span>
+                  <span className="text-sm text-grey">priyanshu@gmail.com</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-semibold">Products:</span>
+                  <span className="text-sm text-grey">paper</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-semibold">Address:</span>
+                  <span className="text-sm text-grey">143 xyz street</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-semibold">Status:</span>
+                  <span className="px-5 py-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    Accepted
+                  </span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-semibold">CreatedAt:</span>
+                  <span className="text-sm text-grey">{new Date().toLocaleString()}</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="font-semibold">Actions:</span>
+                  <div className="flex items-center">
+                    <Link to={"/updateorder"} className="mr-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={20}
+                        height={20}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-grey hover:text-teal cursor-pointer lucide lucide-settings-2"
+                      >
+                        <path d="M20 7h-9" />
+                        <path d="M14 17H5" />
+                        <circle cx="17" cy="17" r="3" />
+                        <circle cx="7" cy="7" r="3" />
+                      </svg>
+                    </Link>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      onClick={() => handleDelete(1)}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-gray-600 hover:text-red-500 cursor-pointer lucide lucide-trash-2"
+                    >
+                      <path d="M3 6h18" />
+                      <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                      <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                      <line x1="10" x2="10" y1="11" y2="17" />
+                      <line x1="14" x2="14" y1="11" y2="17" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

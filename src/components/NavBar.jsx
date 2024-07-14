@@ -10,14 +10,16 @@ const NavBar = () => {
             <a className="flex space-x-5 " href="/">
               <span className="sr-only">Home</span>
               <img src={logo} alt="" className="h-10" />
-              <h1 className="font-mono font-bold mt-2 text-md md:text-xl">SELLER SPOT</h1>
+              <h1 className="font-mono font-bold mt-2 text-md md:text-xl">
+                SELLER SPOT
+              </h1>
             </a>
           </div>
 
           <div className="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 ">
-              <li>
+                <li>
                   <a
                     className="text-grey font-bold text-md transition uppercase hover:text-teal"
                     href="/"
@@ -47,7 +49,8 @@ const NavBar = () => {
                     className="text-grey font-bold text-md transition uppercase hover:text-teal"
                     href="/team"
                   >
-                    Team                  </a>
+                    Team{" "}
+                  </a>
                 </li>
                 <li>
                   <a

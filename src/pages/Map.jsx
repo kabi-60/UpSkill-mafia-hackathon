@@ -8,12 +8,14 @@ const Card = ({ location, onSelectLocation }) => {
   const navigate = useNavigate();
 
   const handleViewDetails = () => {
-    navigate("/productdetails");
+    navigate("/shopdetails");
   };
 
   return (
+    <div>
+      
     <div
-      className="max-w-sm w-full bg-space shadow-xl rounded-xl duration-500 hover:scale-105 p-5 cursor-pointer"
+      className="max-w-sm px-5  mx-5 w-full bg-space mb-10 shadow-xl rounded-xl duration-500 hover:scale-105 p-5 cursor-pointer"
       onClick={() => onSelectLocation(position)}
     >
       <div className="flex flex-col">
@@ -71,7 +73,7 @@ const Card = ({ location, onSelectLocation }) => {
               </svg>
             ))}
           </div>
-          <div className="flex items-center justify-between mt-2">
+          <div className="flex items-center justify-center mt-2">
             <button
               onClick={handleViewDetails}
               className="transition ease-in duration-300 inline-flex items-center text-sm font-bold mb-2 md:mb-0 bg-grey hover:bg-teal px-5 py-2 hover:shadow-lg tracking-wider text-white rounded-full hover:bg-[#00ADB5]"
@@ -82,12 +84,16 @@ const Card = ({ location, onSelectLocation }) => {
         </div>
       </div>
     </div>
+    </div>
   );
 };
 
 const Sidebar = ({ locations, onSelectLocation }) => {
   return (
     <div className="w-1/1 h-screen bg-gray-100 p-4 overflow-y-auto">
+       <h1 className="text-5xl uppercase text-grey mb-5 text-center font-extrabold">
+            Shops
+          </h1>
       {locations.map((location, index) => (
         <Card
           key={index}

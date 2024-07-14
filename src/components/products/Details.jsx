@@ -15,14 +15,14 @@ const Details = () => {
         <div className=" mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex flex-col md:flex-row -mx-4">
             <div className="md:flex-1 px-4">
-              <div className="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
+              <div className="h-64 md:h-80 rounded-lg bg-grey mb-4 flex items-center justify-center">
                 <span className="text-5xl">1</span>
               </div>
 
               <div className="flex -mx-2 mb-4">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="flex-1 px-2">
-                    <button className="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center">
+                    <button className="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-grey flex items-center justify-center">
                       <span className="text-2xl">{i}</span>
                     </button>
                   </div>
@@ -69,7 +69,7 @@ const Details = () => {
                 enim, libero blanditiis expedita cupiditate a est.
               </p>
 
-              <div className="flex py-4 space-x-4">
+              <div className="flex py-4 justify-center md:justify-start space-x-4">
                 <button
                   onClick={order}
                   className="h-12 px-6 py-1 font-semibold rounded bg-grey hover:bg-teal  hover:bg- text-white"
@@ -81,7 +81,7 @@ const Details = () => {
                 <h1 className="mb-5 text-xl font-extrabold leading-tight tracking-tight text-grey">
                   Shop Details
                 </h1>
-                <div className="grid grid-cols-2 gap-5 mx-2 ">
+                <div className="grid xl:grid-cols-2 gap-5 mx-2 ">
                   <h1 className="text-md font-bold leading-tight tracking-tight text-gray-500 flex">
                     <span>
                       <svg
@@ -166,10 +166,10 @@ const Details = () => {
                 </div>
               </div>
               <div className="">
-                <h1 className="mt-5 mb-5 text-xl font-extrabold leading-tight tracking-tight text-grey">
+                <h1 className="mt-5 xl:mb-5 text-xl font-extrabold leading-tight tracking-tight text-grey">
                   Product Reviews
                 </h1>
-                <div className="grid grid-cols-2">
+                <div className="grid xl:grid-cols-2">
                   <div className=" w-72  p-4">
                     <div className="flex  space-x-5 w-full h-4 bg-space rounded-full">
                       <div className="w-3/4 h-full text-center text-xs text-white bg-yellow-500 rounded-full">

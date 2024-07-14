@@ -12,8 +12,8 @@ const ProductDetails = () => {
         <div className="my-5">
           <Details />
         </div>
-      </div>
       <Footer/>
+      </div>
     </div>
   );
 };

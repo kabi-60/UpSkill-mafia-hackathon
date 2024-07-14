@@ -13,22 +13,9 @@ const Post = () => {
       <div className="container mx-auto">
         <NavBar />
         <div className="md:my-10 relative">
-          <div className="hidden xl:block absolute top-48 right-0">
-            <img src={round} alt="" />
-          </div>
-          <div className="hidden xl:block absolute top-72 z-10 left-0">
-            <img src={round} alt="" />
-          </div>
-          <div className="hidden xl:block absolute top-[550px] z-10 left-10">
-            <img src={round} alt="" className="h-44" />
-          </div>
+          
           <div className="flex justify-center relative">
-            <div className="hidden xl:block absolute top-10 z-50 -left-10">
-              <img src={skeleton_1} alt="" className="h-52" />
-            </div>
-            <div className="hidden xl:block absolute -top-5 z-50 left-[120px]">
-              <img src={cloud} alt="" className="h-28" />
-            </div>
+            
             <div className="xl:h-[750px] w-full lg:w-[1550px] flex justify-center items-center rounded">
               <div className="flex xl:h-[630px] w-full lg:w-[1400px] relative z-40 flex-col items-center justify-center p-6 text-slate-400/0 xl:text-slate-400">
                 <div className="grid h-full w-full grid-cols-1 gap-2 xl:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-10">

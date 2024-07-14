@@ -36,7 +36,7 @@ const ProductsPage = () => {
             Products
           </h1>
         </div>
-        <div className=" grid grid-cols-4 gap-10 my-10 mx-auto">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 my-10 mx-5 xl:mx-auto">
           {currentProducts.map((product) => (
             <Card key={product.id} product={product} />
           ))}

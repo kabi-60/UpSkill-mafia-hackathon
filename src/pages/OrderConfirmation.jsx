@@ -64,30 +64,17 @@ const OrderConfirmation = () => {
   };
 
   return (
-    <div class="bg-space h-[100vh]">
-      <div class="container mx-auto ">
+    <div className="bg-space h-[100vh]">
+      <div className="container mx-auto ">
         <NavBar />
-        <div className="my-10 relative">
-          <div className="absolute top-48 right-0">
-            <img src={round} alt="" />
-          </div>
-          <div className="absolute top-72 z-10 left-0">
-            <img src={round} alt="" />
-          </div>
-          <div className="absolute top-[550px] z-10 left-10">
-            <img src={round} alt="" className="h-44" />
-          </div>
+        <div className="xl:my-10 relative">
+        
           <div className="flex justify-center relative">
-            <div className="absolute top-10 z-50 -left-10">
-              <img src={skeleton_1} alt="" className="h-52" />
-            </div>
-            <div className="absolute -top-5 z-50 left-[120px]">
-              <img src={cloud} alt="" className="h-28" />
-            </div>
-            <div className=" h-[750px] w-[1550px] flex justify-center items-center rounded">
-              <div className="flex h-[630px] w-[1400px] relative z-40 flex-col items-center justify-center p-6 text-slate-400/0 xl:text-slate-400">
-                <div className="grid h-full w-full grid-cols-10 gap-4">
-                  <div className="col-span-3 row-span-1 flex justify-center items-center py-2.5 bg-grey rounded card">
+           
+            <div className="xl:h-[750px] w-full lg:w-[1550px] flex justify-center items-center rounded">
+              <div className="flex xl:h-[630px] w-full lg:w-[1400px] relative z-40 flex-col items-center justify-center p-6 text-slate-400/0 xl:text-slate-400">
+                <div className="grid h-full w-full grid-cols-1 gap-2 xl:gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-10">
+                  <div className="col-span-1 xl:col-span-3 row-span-1 flex justify-center items-center py-3 bg-grey rounded card">
                     <div className="text-white">
                       <h1 className="text-md font-semibold moda">User Name</h1>
                       <input
@@ -97,7 +84,7 @@ const OrderConfirmation = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-span-3 row-span-1 bg-grey rounded card flex justify-center items-center">
+                  <div className="col-span-1 xl:col-span-3 row-span-1 bg-grey rounded py-3 card flex justify-center items-center">
                     <div className="text-white">
                       <h1 className="text-md font-semibold moda">User Email</h1>
                       <input
@@ -107,7 +94,7 @@ const OrderConfirmation = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-span-4 row-span-2 bg-grey rounded card flex justify-center items-center">
+                  <div className="col-span-1 xl:col-span-4 row-span-2 bg-grey rounded py-3 card flex justify-center items-center">
                     <div className="text-white w-full mx-10">
                       <h1 className="text-md font-semibold moda text-start">
                         Payment Method
@@ -119,76 +106,76 @@ const OrderConfirmation = () => {
                       </select>
                     </div>
                   </div>
-                  <div className="col-span-4 row-span-4 bg-grey rounded card flex justify-center items-center">
+                  <div className="col-span-1 xl:col-span-4 py-3 row-span-4 bg-grey rounded card flex justify-center items-center">
                     <div className="text-white">
                       <div className="mx-5">
-                        <div class="">
+                        <div className="">
                           <label
-                            for="address"
-                            class="block text-md font-semibold text-white mb-1"
+                            htmlFor="address"
+                            className="block text-md font-semibold text-white mb-1"
                           >
                             Address
                           </label>
                           <input
                             type="text"
                             id="address"
-                            class="w-full rounded border py-2 focus:outline-grey px-3 text-white bg-transparent"
+                            className="w-full rounded border py-2 focus:outline-grey px-3 text-white bg-transparent"
                           />
                         </div>
-                        <div class="">
+                        <div className="">
                           <label
-                            for="city"
-                            class="block text-md font-semibold text-white mb-1"
+                            htmlFor="city"
+                            className="block text-md font-semibold text-white mb-1"
                           >
                             City
                           </label>
                           <input
                             type="text"
                             id="city"
-                            class="w-full rounded border py-2 focus:outline-grey px-3 text-white bg-transparent"
+                            className="w-full rounded border py-2 focus:outline-grey px-3 text-white bg-transparent"
                           />
                         </div>
-                        <div class="grid grid-cols-2 gap-4 ">
+                        <div className="grid grid-cols-2 gap-4">
                           <div>
                             <label
-                              for="state"
-                              class="block text-md font-semibold text-white mb-1"
+                              htmlFor="state"
+                              className="block text-md font-semibold text-white mb-1"
                             >
                               State
                             </label>
                             <input
                               type="text"
                               id="state"
-                              class="w-full rounded border py-2 focus:outline-grey px-3 text-white bg-transparent"
+                              className="w-full rounded border py-2 focus:outline-grey px-3 text-white bg-transparent"
                             />
                           </div>
                           <div>
                             <label
-                              for="zip"
-                              class="block text-md font-semibold text-white mb-1"
+                              htmlFor="zip"
+                              className="block text-md font-semibold text-white mb-1"
                             >
                               ZIP Code
                             </label>
                             <input
                               type="text"
                               id="zip"
-                              class="w-full rounded border py-2 focus:outline-grey px-3 text-white bg-transparent"
+                              className="w-full rounded border py-2 focus:outline-grey px-3 text-white bg-transparent"
                             />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-span-2 row-span-4 bg-grey rounded card flex justify-center items-center">
+                  <div className="col-span-1 xl:col-span-2 row-span-4 bg-grey rounded card flex justify-center items-center">
                     <div className="text-white w-full my-2">
                       <h1 className="text-md font-semibold moda text-center ml-2 mb-2">
                         Profile
                       </h1>
-                      <img src={skeleton} alt="" />
+                      <img src={skeleton} alt="" className="h-52 xl:h-auto mx-auto"/>
                     </div>
                   </div>
-                  <div className="col-span-4 row-span-3 bg-grey rounded card flex justify-center items-center">
-                    <div className="text-white w-full mx-10">
+                  <div className="col-span-1 xl:col-span-4 row-span-3 bg-grey rounded card flex justify-center items-center">
+                    <div className="text-white w-full py-3 mx-10">
                       <h1 className="text-md font-semibold moda text-start">
                         Mobile No
                       </h1>
@@ -196,25 +183,16 @@ const OrderConfirmation = () => {
                         type="text"
                         id="zip"
                         placeholder="Mobile No"
-                        class="w-full rounded placeholder:text-white border py-2 focus:outline-grey px-3 text-white bg-transparent"
+                        className="w-full rounded placeholder:text-white border py-2 focus:outline-grey px-3 text-white bg-transparent"
                       />
                     </div>
                   </div>
 
-                  <button
-                    className="col-span-6 row-span-1 bg-teal rounded flex justify-center items-center cursor-pointer"
-                    onClick={() => toast("Order Successfully")}
-                  >
-                    <div className="text-white w-full mx-10">
-                      <h1 className="text-xl font-bold moda text-center">
-                        Submit
-                      </h1>
-                    </div>
-                  </button>
-                  <div className="col-span-4 row-span-1 bg-grey rounded card flex justify-center py-3 items-center">
+                 
+                  <div className="col-span-1 xl:col-span-4 row-span-1 bg-grey rounded card flex justify-center py-3 items-center">
                     <div className="text-white w-full mx-10">
                       <h1 className="text-md font-semibold moda text-start">
-                        Quantity
+                        Quantity/Units
                       </h1>
                       <div className="w-full flex justify-center">
                         <select className="rounded text-center border focus:outline-grey bg-transparent w-full py-2">
@@ -227,6 +205,16 @@ const OrderConfirmation = () => {
                       </div>
                     </div>
                   </div>
+                  <button
+                    className="col-span-1 xl:col-span-6 row-span-1 bg-teal rounded py-2 flex justify-center items-center cursor-pointer"
+                    onClick={() => toast("Order Successfully")}
+                  >
+                    <div className="text-white w-full mx-10">
+                      <h1 className="text-xl font-bold moda text-center">
+                        Submit
+                      </h1>
+                    </div>
+                  </button>
                 </div>
               </div>
             </div>

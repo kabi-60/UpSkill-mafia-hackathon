@@ -65,7 +65,7 @@ const NavBar = () => {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <a
-                  className="rounded-md bg-grey hover:text-space hover:bg-teal hover:bg-transparent hover:border hover:text-grey px-5 py-2.5 text-md font-semibold text-white shadow "
+                  className="rounded-md bg-grey hover:text-space hover:bg-teal hover:border h px-5 py-2.5 text-md font-semibold text-white shadow "
                   href="/auth/signup"
                 >
                   Signup

@@ -139,7 +139,6 @@ const UserDashboard = () => {
 
                   <div className="col-span-3 row-span-1 card rounded flex justify-center items-center cursor-pointer">
                     <div className="text-white w-full mx-10">
-                     
                       <div className="flex justify-center">
                         <div className=" text-2xl  flex space-x-4">
                           <h1 className="text-2xl font-extrabold moda text-center ">
@@ -163,19 +162,14 @@ const UserDashboard = () => {
                           </svg>
                           500+
                         </div>
-                    
                       </div>
                     </div>
                   </div>
                   <div className="col-span-3 row-span-1 card rounded flex justify-center items-center cursor-pointer">
                     <div className="text-white w-full mx-10">
-                     
                       <div className="flex justify-center">
-                   
                         <div className="text-2xl  flex space-x-4 ">
-                          <h1 className="text-2xl font-extrabold ">
-                            Sales
-                          </h1>
+                          <h1 className="text-2xl font-extrabold ">Sales</h1>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -196,7 +190,6 @@ const UserDashboard = () => {
                       </div>
                     </div>
                   </div>
-                 
                 </div>
               </div>
             </div>

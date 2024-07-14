@@ -42,13 +42,13 @@ const Home = () => {
               <div className="mt-10 text-center">
                 <button
                   onClick={product}
-                  className="bg-grey  px-24 py-2.5 rounded text-white font-bold text-md"
+                  className="bg-grey px-24 py-2.5 rounded text-white font-bold text-md"
                 >
                   Shop Now
                 </button>
               </div>
             </div>
-            <div className="absolute   top-1 left-0 w-full h-full z-5 flex justify-center items-center">
+            <div className="absolute top-1 left-0 w-full h-full z-5 flex justify-center items-center">
               <h1
                 className="py-12 bg-grey hover:bg-teal w-96"
                 style={{ transform: "rotate(-5deg)" }}
@@ -56,24 +56,24 @@ const Home = () => {
             </div>
           </div>
           <div className="w-[60%] mx-auto">
-            <img src={home} alt="Home" className="mx-auto  rounded" />
+            <img src={home} alt="Home" className="mx-auto rounded" />
           </div>
         </div>
         <div className="bg-grey relative w-full z-50 py-11">
-          <ul className="flex list-none space-x-10 mx-auto text-white  justify-center">
-            <li>
+          <ul className="flex list-none space-x-10 mx-auto text-white justify-center z-50">
+            <li className="z-50">
               <img src={Linear} alt="" />
             </li>
-            <li>
+            <li className="z-50">
               <img src={Notion} alt="" />
             </li>
-            <li>
+            <li className="z-50">
               <img src={Loom} alt="" />
             </li>
-            <li>
+            <li className="z-50">
               <img src={Spline} alt="" />
             </li>
-            <li>
+            <li className="z-50">
               <img src={Raycast} alt="" />
             </li>
           </ul>
@@ -88,11 +88,10 @@ const Home = () => {
         </div>
         <button
           onClick={post}
-          className="fixed bottom-10 right-52 z-50  bg-teal h-20  w-20 rounded-full text-center "
+          className="fixed bottom-10 right-52 z-50 bg-teal h-20 w-20 rounded-full text-center"
         >
           <img src={plane} alt="" className="h-16 mt-3 px-2 py-2 mx-auto" />
         </button>
-
         <Service />
         <Footer />
       </div>

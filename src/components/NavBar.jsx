@@ -17,6 +17,14 @@ const NavBar = () => {
           <div className="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 ">
+              <li>
+                  <a
+                    className="text-grey font-bold text-md transition uppercase hover:text-teal"
+                    href="/"
+                  >
+                    Home
+                  </a>
+                </li>
                 <li>
                   <a
                     className="text-grey font-bold text-md transition uppercase hover:text-teal"
